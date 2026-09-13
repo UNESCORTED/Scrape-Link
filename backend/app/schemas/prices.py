@@ -33,3 +33,14 @@ class PriceResponse(BaseModel):
     unit: str | None = None
     recycler_id: UUID | None = None
     source: str | None = None
+
+class PriceTrendResponse(BaseModel):
+    count: int
+    latest_price: Decimal | None = None
+    average_price: Decimal | None = None
+    direction: str
+
+
+class PriceBoardResponse(BaseModel):
+    prices: list[PriceResponse]
+    trend: PriceTrendResponse

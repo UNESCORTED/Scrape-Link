@@ -8,15 +8,19 @@ from app.api.helpers import commit_refresh, extract_point
 from app.core.auth import Principal, get_current_principal, require_role
 from app.db.session import get_db_session
 from app.models.price_history import PriceHistory
-from app.schemas.prices import PriceCreate, PriceResponse
+from app.schemas.prices import PriceBoardResponse, PriceCreate, PriceResponse
 from app.services.location_utils import parse_lat_lon
-from app.services.pricing_service import PriceFilters, list_price_history
+from app.services.pricing_service import (
+    PriceFilters,
+    list_price_history,
+    summarize_price_trend,
+)
 
 
 router = APIRouter(prefix="/prices", tags=["prices"])
 
 
-@router.get("", response_model=list[PriceResponse])
+@router.get("", response_model=PriceBoardResponse)
 async def list_prices(
     category: str | None = Query(default=None),
     location: str | None = Query(default=None, description="Optional latitude,longitude filter"),
@@ -24,7 +28,7 @@ async def list_prices(
     start_date: date | None = Query(default=None),
     end_date: date | None = Query(default=None),
     session: AsyncSession = Depends(get_db_session),
-) -> list[PriceHistory]:
+) -> PriceBoardResponse:
     if date_range:
         try:
             raw_start, raw_end = date_range.split(",", 1)
@@ -38,15 +42,18 @@ async def list_prices(
         raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(exc)) from exc
     latitude = parsed_location[0] if parsed_location else None
     longitude = parsed_location[1] if parsed_location else None
-    return await list_price_history(
-        session,
-        PriceFilters(
-            category=category,
-            start_date=start_date,
-            end_date=end_date,
-            latitude=latitude,
-            longitude=longitude,
+    prices = await list_price_history(session, PriceFilters(
+        category=category,
+        start_date=start_date,
+        end_date=end_date,
+        latitude=latitude,
+        longitude=longitude,
         ),
+    )
+
+    return PriceBoardResponse(
+        prices=[PriceResponse.model_validate(price) for price in prices],
+        trend=summarize_price_trend(prices),
     )
 
 
