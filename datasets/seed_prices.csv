@@ -1,0 +1,8 @@
+material_category,sub_category,latitude,longitude,recorded_date,buying_price,market_range_min,market_range_max,unit,recycler_id,source
+crt,television_tube,28.6139,77.2090,2026-09-01,18,15,21,kg,11111111-1111-1111-1111-111111111111,demo_seed
+lcd_panel,monitor_panel,19.0760,72.8777,2026-09-01,24,20,28,kg,22222222-2222-2222-2222-222222222222,demo_seed
+pcb,mixed_boards,19.0760,72.8777,2026-09-01,170,145,190,kg,22222222-2222-2222-2222-222222222222,demo_seed
+cables,copper_cables,28.6139,77.2090,2026-09-01,115,95,130,kg,11111111-1111-1111-1111-111111111111,demo_seed
+batteries,lithium_ion,18.5204,73.8567,2026-09-01,68,55,80,kg,33333333-3333-3333-3333-333333333333,demo_seed
+motors,mixed_motors,18.5204,73.8567,2026-09-01,58,48,70,kg,33333333-3333-3333-3333-333333333333,demo_seed
+mixed_plastics,ewaste_plastic,19.0760,72.8777,2026-09-01,12,8,15,kg,22222222-2222-2222-2222-222222222222,demo_seed

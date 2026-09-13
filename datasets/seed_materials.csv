@@ -1,0 +1,8 @@
+material_category,sub_category,hazard_level,safety_tip_en,safety_tip_hi,safety_tip_mr
+crt,television_tube,high,Do not break CRT glass; hand it to an authorized recycler.,CRT glass na todein; ise authorized recycler ko dein.,CRT glass phodu naka; authorized recycler kade dya.
+lcd_panel,monitor_panel,medium,Keep panels intact and avoid direct skin contact with broken glass.,Panel ko intact rakhein aur broken glass ko seedha na chhuyein.,Panel intact theva ani tutlelya glass la directly sparsh karu naka.
+pcb,mixed_boards,medium,Do not burn circuit boards; fumes are harmful.,Circuit boards na jalayein; dhuan hanikarak hai.,Circuit boards jalu naka; dhur hanikarak aahe.
+cables,copper_cables,medium,Do not burn cables to remove metal; sell them intact.,Metal nikalne ke liye cables na jalayein; intact bechein.,Metal kadhnyasathi cables jalu naka; intact vika.
+batteries,lithium_ion,high,Do not open or crush batteries; store away from heat.,Batteries ko na kholein na crush karein; garmi se door rakhein.,Batteries ughadu naka kiwa crush karu naka; ushnetepasun door theva.
+motors,mixed_motors,low,Keep motors dry and separate from batteries.,Motors ko sookha rakhein aur batteries se alag rakhein.,Motors korade theva ani batteries pasun vegale theva.
+mixed_plastics,ewaste_plastic,low,Keep plastics separate from hazardous parts.,Plastic ko hazardous parts se alag rakhein.,Plastic hazardous parts pasun vegale theva.

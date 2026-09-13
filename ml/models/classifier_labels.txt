@@ -1,0 +1,7 @@
+batteries
+cables
+crt
+lcd_panel
+mixed_plastics
+motors
+pcb

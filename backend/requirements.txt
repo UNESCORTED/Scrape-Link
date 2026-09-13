@@ -2,3 +2,8 @@ fastapi==0.115.0
 uvicorn[standard]==0.30.6
 pydantic-settings==2.4.0
 python-dotenv==1.0.1
+SQLAlchemy==2.0.34
+alembic==1.13.2
+asyncpg==0.29.0
+psycopg[binary]==3.2.1
+GeoAlchemy2==0.15.2

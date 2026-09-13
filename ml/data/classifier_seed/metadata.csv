@@ -1,0 +1,8 @@
+image_ref,material_category,sub_category,split,notes
+placeholder_crt.ppm,crt,television_tube,train,tiny generated placeholder image; replace before production training
+placeholder_lcd_panel.ppm,lcd_panel,monitor_panel,train,tiny generated placeholder image; replace before production training
+placeholder_pcb.ppm,pcb,mixed_boards,train,tiny generated placeholder image; replace before production training
+placeholder_cables.ppm,cables,copper_cables,train,tiny generated placeholder image; replace before production training
+placeholder_batteries.ppm,batteries,lithium_ion,train,tiny generated placeholder image; replace before production training
+placeholder_motors.ppm,motors,mixed_motors,train,tiny generated placeholder image; replace before production training
+placeholder_mixed_plastics.ppm,mixed_plastics,ewaste_plastic,train,tiny generated placeholder image; replace before production training

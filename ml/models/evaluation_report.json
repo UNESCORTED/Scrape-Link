@@ -1,0 +1,9 @@
+{
+  "artifact_type": "demo_evaluation_report",
+  "created_at": "2026-09-12T13:19:46.426532+00:00",
+  "warning": "This report uses tiny seed data only. It is not a real-world model accuracy report.",
+  "classifier_label_count": 7,
+  "classifier_seed_categories_missing_from_labels": [],
+  "valuation_seed_transaction_count": 2,
+  "valuation_demo_mean_absolute_error_on_seed_transactions": "25.75"
+}
