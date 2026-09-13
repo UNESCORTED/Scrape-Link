@@ -1,6 +1,6 @@
 {
   "artifact_type": "demo_valuation_model",
-  "created_at": "2026-09-12T13:18:49.385268+00:00",
+  "created_at": "2026-09-13T09:59:13.867943+00:00",
   "training_mode": "seed_price_baseline",
   "warning": "This is a tiny seed-data baseline, not a production valuation model or real market performance claim.",
   "category_unit_prices": {
@@ -28,5 +28,5 @@
       "observed_unit_price": "166.67"
     }
   ],
-  "sklearn_gradient_boosting_status": "skipped: scikit-learn or pandas is not installed"
+  "sklearn_gradient_boosting_status": "trained demo GradientBoostingRegressor and wrote /Users/satyam/Repo/Scrape-Link/ml/models/valuation_gradient_boosting.pkl"
 }
